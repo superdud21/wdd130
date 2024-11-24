@@ -10,7 +10,6 @@ a {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
   color: var(--text-color);
   margin: 0;
   padding: 0;
@@ -23,19 +22,9 @@ header {
   background-color: var(--primary-color);
 }
 
-header img.logo {
-  max-height: 50px;
-  margin-right: 10px;
-}
-
-header nav a {
-  margin-right: 15px;
-  color: white;
-  text-decoration: none;
-}
-
 .hero {
   position: relative;
+  text-align: center;
 }
 
 .hero img {
@@ -49,7 +38,9 @@ header nav a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: rgb(255, 255, 255);
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero article {
@@ -58,28 +49,49 @@ header nav a {
   left: 20px;
   right: 20px;
   background-color: rgba(0, 0, 0, 0.5);
-  color: rgb(255, 255, 255);
-  padding: 10px;
+  color: white;
+  padding: 15px;
+  font-size: 1rem;
 }
 
 .hero article img {
   float: right;
+  max-width: 150px;
   margin-left: 10px;
-  width: 200px;
-  height: auto;
 }
 
-/* Footer */
+section {
+  padding: 20px;
+}
+
+section h2 {
+  color: #E65100;
+}
+
+section p {
+  color: #333;
+}
+
+section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
 footer {
   text-align: center;
-  padding: 10px;
-  background-color: var(--secondary-color);
-  color: white;
+  padding: 20px;
+  background-color: #f5f5f5;
 }
 
-footer .sociallinks a img {
-  margin: 0 5px;
+footer p {
+  margin: 0;
+  color: #555;
+}
+
+footer .sociallinks img {
   width: 24px;
   height: 24px;
-  text-decoration: none;
+  margin: 0 5px;
 }

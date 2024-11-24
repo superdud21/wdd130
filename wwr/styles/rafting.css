@@ -5,7 +5,10 @@
   --accent-color-2: #a6808c;
 }
 
-/* Global Styles */
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
@@ -31,7 +34,6 @@ header nav a {
   text-decoration: none;
 }
 
-/* Hero Section */
 .hero {
   position: relative;
 }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Caleb Cameron">
+        <meta name="description" content="Experience the adventure of white water rafting. Join our trips and make memories that last a lifetime.">
+        <title>White Water Rafting - Home</title>
+        <link rel="stylesheet" href="styles/rafting.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo-container">
+                <img src="images/wwr_logo.jpg" alt="River Riders Logo" class="logo">
+            </div>
+            <nav class="navbar">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <img src="images/rafting-hero.jpg" alt="Exciting Rafting Adventure" class="hero-image">
+                <h1>Adventure Awaits: Conquer the Rapids!</h1>
+            </section>
+            <section class="newsletter">
+                <h2>Stay Updated</h2>
+                <p>Sign up for our newsletter to receive updates on trips, offers, and tips!</p>
+                <form action="submit_newsletter.php" method="POST">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    
+                    <button type="submit">Sign Up</button>
+                </form>
+            </section>
+            <section class="cta">
+                <h2>Ready for the Adventure?</h2>
+                <p>Embark on the journey of a lifetime with our guided rafting trips.</p>
+                <a href="trips.html" class="cta-button">Explore Our Trips</a>
+            </section>
+            <section class="grid-content">
+                <h2>Discover the Thrill of White Water Rafting</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="images/rafting6.jpg" alt="Rafting Action">
+                        <p>Join the best rafting experiences with skilled guides and breathtaking views.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/rafting2.jpg" alt="Rafting Adventure">
+                        <p>Family-friendly and adventurous trips for all skill levels!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 River Riders Rafting Co. All rights reserved. Designed by Caleb Cameron.</p>
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.svg" alt="Twitter">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+            </nav>
+        </footer>
+    </body>
+</html>

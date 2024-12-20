@@ -79,6 +79,38 @@ section img {
   margin: 20px 0;
 }
 
+.employees {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between profiles */
+  justify-content: center; /* Centers the profiles horizontally */
+  align-items: flex-start; /* Aligns items to the top */
+  margin: 0 auto; /* Centers the entire section */
+  text-align: center;
+  max-width: 1200px; /* Optional: Limit the width of the section */
+}
+
+.employee-profile {
+  flex: 1 1 300px; /* Each profile takes up 300px width */
+  box-sizing: border-box;
+  padding: 10px; /* Add space inside the profile box */
+  border: 1px solid #ccc; /* Optional: Add a border */
+  background-color: #f9f9f9; /* Optional: Add a background color */
+}
+
+.employee-profile img {
+  width: 100%; /* Make image take up full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: Round the corners */
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center; /* Center-align the heading */
+  width: 100%; /* Ensure it spans full width */
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
 footer {
   text-align: center;
   padding: 20px;
@@ -94,4 +126,59 @@ footer .sociallinks img {
   width: 24px;
   height: 24px;
   margin: 0 5px;
+}
+
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+}
+.contact-form label {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.contact-form input[type="checkbox"] {
+  margin: 0; 
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds space between the checkbox and the text */
+}
+
+.checkbox-group label {
+  margin: 0; /* Removes any unwanted margins around the label */
+}
+
+h1 {
+  margin-left: 20px; /* Adjust the value to move it right */
+  text-align: left; /* Ensure it remains aligned to the left */
+  font-size: 2em; /* Optional: Adjust the size if needed */
+  color: #333; /* Optional: Change the color if desired */
 }

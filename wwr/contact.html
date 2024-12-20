@@ -49,26 +49,29 @@
                 <h2>Send Us a Message</h2>
                 <form action="submit_form.php" method="POST">
                     <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" required>
-
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
                     <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required>
-
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
                     <p>Purpose of Contact:</p>
-                    <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
-                    <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
-
+                    <div class="radio-group">
+                        <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
+                        <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
+                        <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+                    </div>
+            
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-
-                    <label>
-                        <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
-                    </label>
-
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+                    </div>
+            
                     <button type="submit">Submit Message</button>
                 </form>
             </section>
+            <br>
         </main>
         <footer>
             <p>&copy; 2024 River Riders Rafting Co. All rights reserved. Designed by Caleb Cameron.</p>
@@ -83,7 +86,7 @@
                     <img src="images/twitter.svg" alt="Instagram">
                 </a>
             </nav>
-            <p><a href="wireframes/contact-us-wireframe.png">View Wireframe</a></p>
+            <p><a href="https://app.moqups.com/G1Wd49vZblTLEsIGJhAX4bE8j1tRIsfj/view/page/ad64222d5">View Wireframe</a></p>
         </footer>
     </body>
 </html>
